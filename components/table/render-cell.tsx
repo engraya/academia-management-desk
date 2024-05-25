@@ -59,12 +59,12 @@ export const RenderCell = ({ user, columnKey }: Props) => {
           <div>
             <Tooltip content="Details">
               <button onClick={() => console.log("View user", user.id)}>
-                <EyeIcon size={20} fill="#979797" />
+                <EyeIcon size={20} fill="#1a9753" />
               </button>
             </Tooltip>
           </div>
           <div>
-            <Tooltip content="Edit user" color="secondary">
+            <Tooltip content="Edit" color="secondary">
               <button onClick={() => console.log("Edit user", user.id)}>
                 <EditIcon size={20} fill="#979797" />
               </button>
@@ -72,11 +72,11 @@ export const RenderCell = ({ user, columnKey }: Props) => {
           </div>
           <div>
             <Tooltip
-              content="Delete user"
+              content="Delete"
               color="danger"
               onClick={() => console.log("Delete user", user.id)}
             >
-              <button>
+              <button type="button">
                 <DeleteIcon size={20} fill="#FF0080" />
               </button>
             </Tooltip>

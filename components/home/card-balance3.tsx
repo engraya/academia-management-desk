@@ -9,12 +9,11 @@ export const CardBalance3 = () => {
         <div className="flex gap-2.5">
           <Community />
           <div className="flex flex-col">
-            <span className="text-white">Card Insurance</span>
-            <span className="text-white text-xs">1311 Cars</span>
+            <span className="text-white">Management Staffs</span>
           </div>
         </div>
         <div className="flex gap-2.5 py-2 items-center">
-          <span className="text-white text-xl font-semibold">$3,910</span>
+          <span className="text-white text-xl font-semibold">3,910</span>
           <span className="text-danger text-xs">- 4.5%</span>
         </div>
         <div className="flex items-center gap-6">
@@ -23,7 +22,7 @@ export const CardBalance3 = () => {
               <span className="font-semibold text-danger text-xs">{"↓"}</span>
               <span className="text-xs">100,930</span>
             </div>
-            <span className="text-white text-xs">USD</span>
+            <span className="text-white text-xs">Incoming</span>
           </div>
 
           <div>
@@ -31,7 +30,7 @@ export const CardBalance3 = () => {
               <span className="font-semibold text-danger text-xs">{"↑"}</span>
               <span className="text-xs">4,120</span>
             </div>
-            <span className="text-white text-xs">USD</span>
+            <span className="text-white text-xs">Left</span>
           </div>
 
           <div>

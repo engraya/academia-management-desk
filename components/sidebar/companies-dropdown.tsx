@@ -10,18 +10,20 @@ import React, { useState } from "react";
 import { AcmeIcon } from "../icons/acme-icon";
 import { AcmeLogo } from "../icons/acmelogo";
 import { BottomIcon } from "../icons/sidebar/bottom-icon";
+import { appLogo } from "@/assets/assets";
+import Image, { StaticImageData } from "next/image";
 
 interface Company {
   name: string;
   location: string;
-  logo: React.ReactNode;
+  logo: any;
 }
 
 export const CompaniesDropdown = () => {
   const [company, setCompany] = useState<Company>({
-    name: "Acme Co.",
-    location: "Palo Alto, CA",
-    logo: <AcmeIcon />,
+    name: "NTIC",
+    location: "Yobe",
+    logo: appLogo,
   });
   return (
     <Dropdown
@@ -31,7 +33,7 @@ export const CompaniesDropdown = () => {
     >
       <DropdownTrigger className="cursor-pointer">
         <div className="flex items-center gap-2">
-          {company.logo}
+          <Image src={company.logo} height={50} width={50} alt="ntic-logo"/>
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-medium m-0 text-default-900 -mb-4 whitespace-nowrap">
               {company.name}
