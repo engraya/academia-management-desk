@@ -48,12 +48,12 @@ export const SidebarWrapper = () => {
                 icon={<AccountsIcon />}
                 href="staffs"
               />
-              <SidebarItem
+              {/* <SidebarItem
                 isActive={pathname === "/payments"}
                 title="Payments"
                 icon={<PaymentsIcon />}
                 href="payments"
-              />
+              /> */}
               <SidebarItem
                 icon={<BalanceIcon />}
                 isActive={pathname === "/alumni"}
@@ -66,12 +66,12 @@ export const SidebarWrapper = () => {
                 icon={<CustomersIcon />}
                 href="students"
               />
-              <SidebarItem
+              {/* <SidebarItem
                 isActive={pathname === "/courses"}
                 title="Courses"
                 icon={<ProductsIcon />}
                 href="courses"
-              />
+              /> */}
               <SidebarItem
                 isActive={pathname === "/reports"}
                 title="Reports"

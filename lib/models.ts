@@ -3,13 +3,7 @@ import mongoose from "mongoose";
 // Alumni Schema
 const alumniSchema = new mongoose.Schema(
   {
-    firstname: {
-      type: String,
-      required: true,
-      min: 3,
-      max: 20,
-    },
-    lastname: {
+    name: {
       type: String,
       required: true,
       min: 3,
@@ -55,13 +49,7 @@ const alumniSchema = new mongoose.Schema(
 // Student Schema
 const studentSchema = new mongoose.Schema(
   {
-    firstname: {
-      type: String,
-      required: true,
-      min: 3,
-      max: 20,
-    },
-    lastname: {
+    name: {
       type: String,
       required: true,
       min: 3,
@@ -71,7 +59,7 @@ const studentSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    class: {
+    studentClass: {
       type: String,
       required: true,
     },
@@ -94,13 +82,7 @@ const studentSchema = new mongoose.Schema(
 // Staff Schema
 const staffSchema = new mongoose.Schema(
   {
-    firstname: {
-      type: String,
-      required: true,
-      min: 3,
-      max: 20,
-    },
-    lastname: {
+    name: {
       type: String,
       required: true,
       min: 3,

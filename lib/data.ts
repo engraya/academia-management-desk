@@ -10,8 +10,8 @@ export const fetchStudents = async (q: string, page: number): Promise<{ count: n
 
   try {
     connectToDB();
-    const count = await Student.countDocuments({ firstname: { $regex: regex } });
-    const students = await Student.find({ firstname: { $regex: regex } })
+    const count = await Student.countDocuments({ name: { $regex: regex } });
+    const students = await Student.find({ name: { $regex: regex } })
       .limit(ITEM_PER_PAGE)
       .skip(ITEM_PER_PAGE * (page - 1));
     return { count, students };
@@ -39,8 +39,8 @@ export const fetchStaff = async (q: string, page: number): Promise<{ count: numb
 
   try {
     connectToDB();
-    const count = await Staff.countDocuments({ firstname: { $regex: regex } });
-    const staff = await Staff.find({ firstname: { $regex: regex } })
+    const count = await Staff.countDocuments({ name: { $regex: regex } });
+    const staff = await Staff.find({ name: { $regex: regex } })
       .limit(ITEM_PER_PAGE)
       .skip(ITEM_PER_PAGE * (page - 1));
     return { count, staff };
@@ -68,8 +68,8 @@ export const fetchAlumni = async (q: string, page: number): Promise<{ count: num
 
   try {
     connectToDB();
-    const count = await Alumni.countDocuments({ firstname: { $regex: regex } });
-    const alumni = await Alumni.find({ firstname: { $regex: regex } })
+    const count = await Alumni.countDocuments({ name: { $regex: regex } });
+    const alumni = await Alumni.find({ name: { $regex: regex } })
       .limit(ITEM_PER_PAGE)
       .skip(ITEM_PER_PAGE * (page - 1));
     return { count, alumni };

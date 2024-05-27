@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Staffs } from '@/components/staffs';
 
-function StaffsPage() {
-  return (
-    <div>
-      <h1>Staffs Page</h1>
-    </div>
-  )
-}
 
-export default StaffsPage
+const staffs = () => {
+   return <Staffs />;
+};
+
+export default staffs;
